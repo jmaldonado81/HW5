@@ -1,5 +1,5 @@
 function
-  primeNumber(){
+  primeNumber() {
     var n, i, flag = true;
     n = document.myform.n.value; 
     n = parseInt(n) 
@@ -9,7 +9,21 @@ function
             break; 
         } 
     if (flag == true) 
-      alert(n + ""); 
+      alert(n + "there are % numbers"); 
     else
       alert(n + " invalid input please try again"); 
-  } 
+  };
+  primeNumber() {
+    var x, text;
+  
+   
+    x = document.getElementById("numb").value;
+  
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 2 || x > 100) {
+      text = "";
+    } else {
+      text = "invalid input please try again";
+    }
+    document.getElementById("demo").innerHTML = text;
+  }
