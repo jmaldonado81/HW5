@@ -12,15 +12,12 @@
         <h1 class="page-title">Midterm Exam</h1>
         <h1 class="page-text">Find all prime numbers between two numbers</h1>
     </header>
-    <form action="/action_page.php" method="post">
-        <h2>Number 1</h2>
-        <input id="id1" type="number" min="2" max="100" required>
-        <h2>Number 2</h2>
-        <input id="id1" type="number" min="2" max="100" required>
-        <button onclick="myFunction()">OK</button>
-
-        <p id="validate"></p>
-
+    <form name="myform"> 
+        Enter the number: 
+        <input type="text" name=n value=""> 
+        <br><br> 
+        <input type="button" value="Check" onClick="primeNumber()"> 
+        <br> 
     </form>
 </body>
 </html>
